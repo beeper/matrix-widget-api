@@ -244,7 +244,7 @@ export class ClientWidgetApi extends EventEmitter {
                 console.error(
                     "Widget specified waitForIframeLoad=false but timed out waiting for contentLoaded event!",
                 );
-            }, 10000);
+            }, 30000);
             this.contentLoadedActionSent = false;
         }
     }

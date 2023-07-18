@@ -41,7 +41,7 @@ interface IOutboundRequest {
 export class PostmessageTransport extends EventEmitter implements ITransport {
     public strictOriginCheck = false;
     public targetOrigin = "*";
-    public timeoutSeconds = 10;
+    public timeoutSeconds = 30;
 
     private _ready = false;
     private _widgetId: string | null = null;
